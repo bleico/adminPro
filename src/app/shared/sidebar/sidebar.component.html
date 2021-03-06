@@ -13,12 +13,12 @@
             href="#"
             aria-expanded="false"
           >
-            <img src="./assets/images/users/profile.png" alt="user" />
-            <span class="hide-menu">Steave Jobs</span>
+            <img [src]="usuario.imagenUrl" alt="user" />
+            <span class="hide-menu">{{ usuario.nombre }}</span>
           </a>
           <ul aria-expanded="false" class="collapse">
             <li>
-              <a href="javascript:void()">My Profile </a>
+              <a routerLink='./perfil' routerLinkActive="active">My Profile </a>
             </li>
             <li>
               <a href="javascript:void()">My Balance</a>
